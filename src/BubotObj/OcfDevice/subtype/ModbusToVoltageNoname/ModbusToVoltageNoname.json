@@ -1,0 +1,77 @@
+{
+  "/oic/d": {
+    "n": "Modbus to voltage"
+  },
+  "/oic/p": {
+    "mnmn": "noname",
+    "mnml": "https://aliexpress.ru/item/32797362848.html",
+    "mnmo": "Modbus to voltage. 4 channel"
+  },
+  "/oic/con": {
+    "rt": [
+      "bubot.modbus.slave.con"
+    ],
+    "master": {
+      "anchor": "",
+      "href": "/modbus_msg",
+      "eps": []
+    },
+    "slave": 0,
+    "baudRate": 9600,
+    "parity": 0,
+    "dataBits": 8,
+    "stopBits": 1
+  },
+  "/v0": {
+    "n": "v0",
+    "rt": [
+      "oic.r.openlevel",
+      "oic.r.switch.binary"
+    ],
+    "if": [
+      "oic.if.baseline"
+    ],
+    "p": {
+      "bm": 1
+    }
+  },
+  "/v1": {
+    "n": "v1",
+    "rt": [
+      "oic.r.openlevel",
+      "oic.r.switch.binary"
+    ],
+    "if": [
+      "oic.if.baseline"
+    ],
+    "p": {
+      "bm": 1
+    }
+  },
+  "/v2": {
+    "n": "v2",
+    "rt": [
+      "oic.r.openlevel",
+      "oic.r.switch.binary"
+    ],
+    "if": [
+      "oic.if.baseline"
+    ],
+    "p": {
+      "bm": 1
+    }
+  },
+  "/v3": {
+    "n": "v3",
+    "rt": [
+      "oic.r.openlevel",
+      "oic.r.switch.binary"
+    ],
+    "if": [
+      "oic.if.baseline"
+    ],
+    "p": {
+      "bm": 1
+    }
+  }
+}
