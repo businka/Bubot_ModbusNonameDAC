@@ -22,19 +22,6 @@
     "dataBits": 8,
     "stopBits": 1
   },
-  "/v0": {
-    "n": "v0",
-    "rt": [
-      "oic.r.openlevel",
-      "oic.r.switch.binary"
-    ],
-    "if": [
-      "oic.if.baseline"
-    ],
-    "p": {
-      "bm": 1
-    }
-  },
   "/v1": {
     "n": "v1",
     "rt": [
@@ -63,6 +50,19 @@
   },
   "/v3": {
     "n": "v3",
+    "rt": [
+      "oic.r.openlevel",
+      "oic.r.switch.binary"
+    ],
+    "if": [
+      "oic.if.baseline"
+    ],
+    "p": {
+      "bm": 1
+    }
+  },
+  "/v4": {
+    "n": "v4",
     "rt": [
       "oic.r.openlevel",
       "oic.r.switch.binary"

@@ -2,7 +2,7 @@ from aio_modbus_client.ModbusDevice import ModbusDevice
 from aio_modbus_client.DataFormatter import DataFormatterInteger
 
 
-class ModbusToVoltageNoname(ModbusDevice):
+class ModbusNonameDAC(ModbusDevice):
     file = __file__
 
     def __init__(self, address, protocol, **kwargs):
@@ -10,6 +10,13 @@ class ModbusToVoltageNoname(ModbusDevice):
         # self.formatter['boolean5a'] = FormatterBoolean5a
         super().__init__(address, protocol, **kwargs)
 
+    async def is_device(self):
+        result = await self.read_param('address')
+        if result:
+            print(f'0x{self.slave_id:x}', result)
+        if result in ['WB-MRG']:
+            return True
+        return False
     pass
 
 

@@ -1,5 +1,7 @@
 .idea
 __pycache__
 node_modules
-dist
+/venv
+/dist
 /build
+*.egg-info

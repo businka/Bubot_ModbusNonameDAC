@@ -1,0 +1,13 @@
+[
+  {
+    "id": "values",
+    "table": "holding",
+    "address": 664,
+    "formatter": "array",
+    "item": {
+      "formatter": "integer",
+      "maximum": 10000
+    },
+    "maximum": 4
+  }
+]

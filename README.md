@@ -1,4 +1,4 @@
-NONAME генератор выходного напряжения 0-10v / 0-5v с управлением по modbus
+#NONAME генератор выходного напряжения 0-10v / 0-5v с управлением по modbus
 
 # Описание железа:
 
@@ -127,13 +127,11 @@ NONAME генератор выходного напряжения 0-10v / 0-5v �
 
 010302980001 - считывание 1 канала выходное напряжение значение
 
-Licensing
----------
+##Licensing
 
-aiocoap is published under the Apache License 2.0, see LICENSE_ for details.
+
+this published under the MIT License, see [LICENSE](LICENSE) for details.
 
 
 Copyright (c) 2019 Mikhail Razgovorov <http://razgovorov.ru/>,
-
-.. _LICENSE: LICENSE
 
